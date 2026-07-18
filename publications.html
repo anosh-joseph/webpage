@@ -1,0 +1,1475 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Publications - Anosh Joseph</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+          
+          <style>
+            :root {
+              --text: #1f2937;
+              --muted: #6b7280;
+              --border: #e5e7eb;
+              --bg: #ffffff;
+              --accent: #374151;
+              --link: #2563eb;
+            }
+            
+            body {
+              margin: 0;
+              background: var(--bg);
+              color: var(--text);
+              font-family: "Source Serif 4", Georgia, serif;
+              line-height: 1.75;
+            }
+            
+            header {
+              position: sticky;
+              top: 0;
+              background: #ffffffee;
+              backdrop-filter: blur(4px);
+              border-bottom: 1px solid var(--border);
+              z-index: 1000;
+            }
+            
+            .nav-container {
+              max-width: 1100px;
+              margin: 0 auto;
+              padding: 0.75rem 1.25rem;
+              display: flex;
+              align-items: center;
+            }
+            
+            .nav-container img {
+              height: 64px;
+            }
+            
+            nav ul {
+              list-style: none;
+              display: flex;
+              gap: 1.1rem;
+              margin-left: auto;
+              padding-left: 3rem;
+              font-family: "Inter", system-ui, sans-serif;
+              font-size: 0.88rem;
+            }
+            
+            nav a {
+              text-decoration: none;
+              color: var(--accent);
+            }
+            
+            nav a.active {
+              font-weight: 500;
+              border-bottom: 2px solid var(--accent);
+              padding-bottom: 0.15rem;
+            }
+            
+            main {
+              max-width: 820px;
+              margin: 3rem auto 4rem;
+              padding: 0 1.25rem;
+            }
+            
+            h1 {
+              font-size: 1.8rem;
+              margin-bottom: 0.75rem;
+              color: var(--accent);
+            }
+            
+            h2 {
+              font-size: 1.4rem;
+              margin: 2.5rem 0 1rem;
+              color: var(--accent);
+            }
+            
+            /* External profile links */
+            .profile-links {
+              font-family: "Inter", system-ui, sans-serif;
+              font-size: 0.85rem;
+              margin-bottom: 2.5rem;
+              color: var(--muted);
+            }
+            
+            .profile-links a {
+              color: var(--link);
+              margin-right: 1.25rem;
+              text-decoration: none;
+            }
+            
+            /* Collapsible sections */
+            details.section {
+              margin-bottom: 3rem;
+            }
+            
+            details.section summary {
+              cursor: pointer;
+              font-family: "Inter", system-ui, sans-serif;
+              font-size: 1.1rem;
+              font-weight: 500;
+              color: var(--accent);
+              margin-bottom: 1.5rem;
+            }
+            
+            /* Publication entries */
+            .pub {
+              margin-bottom: 2.5rem;
+              padding-bottom: 1.75rem;
+              border-bottom: 1px solid var(--border);
+            }
+            
+            .pub:last-child {
+              border-bottom: none;
+            }
+            
+            .pub-tags {
+              margin-bottom: 0.4rem;
+            }
+            
+            .pub-tag {
+              display: inline-block;
+              font-family: "Inter", system-ui, sans-serif;
+              font-size: 0.7rem;
+              font-weight: 500;
+              text-transform: uppercase;
+              letter-spacing: 0.04em;
+              padding: 0.15rem 0.45rem;
+              border-radius: 3px;
+              border: 1px solid var(--border);
+            }
+            
+            .pub-tag.journal {
+              background: #eef2ff;
+              color: #1e3a8a;
+              border-color: #c7d2fe;
+            }
+            
+            .pub-tag.conference {
+              background: #fffbeb;
+              color: #92400e;
+              border-color: #fde68a;
+            }
+
+            .pub-tag.editedvolume {
+              background: #bbfbeb;
+              color: #81400e;
+              border-color: #fde71a;
+            }
+            
+            .pub-tag.book {
+              background: #fffbeb;
+              color: #81433e;
+              border-color: #fde31a;
+            }
+            
+            .pub-title {
+              font-weight: 600;
+            }
+            
+            .pub-authors {
+              margin: 0.2rem 0;
+            }
+            
+            .pub-meta {
+              font-size: 0.9rem;
+              color: var(--muted);
+            }
+            
+            .pub-meta a {
+              color: var(--link);
+            }
+            
+            details.abstract-toggle summary {
+              cursor: pointer;
+              font-family: "Inter", system-ui, sans-serif;
+              font-size: 0.85rem;
+              color: var(--link);
+              margin-top: 0.4rem;
+            }
+            
+            .abstract {
+              margin-top: 0.6rem;
+              font-size: 0.95rem;
+            }
+            
+            footer {
+              border-top: 1px solid var(--border);
+              padding: 2rem 1.25rem;
+              font-size: 0.9rem;
+              color: var(--muted);
+            }
+            
+            footer .container {
+              max-width: 820px;
+              margin: 0 auto;
+            }
+          </style>
+        </head>
+  
+  <body>
+    
+    <header>
+      <div class="nav-container">
+        <a href="index.html"><img src="assets/img/anosh_joseph.png" alt="Anosh Joseph"></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html" class="active">Publications</a></li>
+            <li><a href="talks.html">Talks</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="mitp_events.html">MITP Events</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="join_us.html">Join Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <main>
+      
+      <h1>Publications</h1>
+      
+      <div class="profile-links">
+        <a href="https://orcid.org/0000-0003-4288-8207">ORCID</a>
+        <a href="https://inspirehep.net/authors/1049897?ui-citation-summary=true">INSPIRE-HEP</a>
+        <a href="https://scholar.google.com/citations?user=NvMLKiAAAAAJ&hl=en">Google Scholar</a>
+      </div>
+      
+        
+        <h2>2025</h2>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Gradient and Hessian-Based Temperature Estimator in Lattice Gauge Theories: A Diagnostic Tool for Stability and Consistency in Numerical Simulations</div>
+          <div class="pub-authors">Navdeep Singh Dhindsa, Anosh Joseph, and Vamika Longia</div>
+          <div class="pub-meta">
+            Journal of High Energy Physics (2025).
+            <a href="https://arxiv.org/abs/2508.05595">arXiv:2508.05595</a>,
+            <a href="   
+https://doi.org/10.1007/JHEP10%282025%29015">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We present a field configuration-based temperature estimator in lattice gauge theories, constructed from the gradient and Hessian of the Euclidean action. Adapted from geometric formulations of entropy in classical statistical mechanics, this estimator provides a gauge-invariant, non-kinetic diagnostic of thermodynamic consistency in Monte Carlo simulations. We validate the method in compact U(1) lattice gauge theories across one, two, and four dimensions, comparing the estimated configurational temperature with the conventional temperature set by the temporal extent of the lattice. Our results show that the estimator accurately reproduces the input temperature and remains robust across a range of lattice volumes and coupling strengths. The temperature estimator offers a general-purpose diagnostic for lattice field theory simulations, with potential applications to non-Abelian theories, anisotropic lattices, and real-time monitoring in hybrid Monte Carlo algorithms.
+            </div>
+          </details>
+        </div>
+
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Complex Langevin Simulations of Supersymmetric Theories</div>
+          <div class="pub-authors">Anosh Joseph, Arpith Kumar</div>
+          <div class="pub-meta">
+            International Journal of Modern Physics A (2025).
+            <a href="https://arxiv.org/abs/2504.02660">arXiv:2504.02660</a>,
+            <a href="https://doi.org/10.1142/S0217751X25300066">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              This review explores the Complex Langevin Method (CLM), a stochastic quantization technique designed to address the sign problem in quantum field theories with complex actions. Beginning with foundational principles, the review examines the applications of CLM across a range of models, including zero- and two-dimensional systems, supersymmetric quantum mechanics, and the IKKT matrix model, a candidate for non-perturbative string theory. Key advancements, such as stabilization techniques and mass deformations, are highlighted as solutions to challenges like numerical instability and singular drift terms. The review emphasizes the capacity of CLM to simulate complex systems and reveal non-perturbative phenomena, positioning it as a powerful tool for exploring quantum field theory and string theory. Future directions, including higher-dimensional applications and benchmarking against quantum simulations, underscore the potential of CLM to advance both theoretical understanding and computational methodologies.
+            </div>
+          </details>
+        </div>
+        
+        <h2>2024</h2>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Finite-temperature phase diagram of the Berenstein-Maldacena-Nastase matrix model on the lattice</div>
+          <div class="pub-authors">Raghav G. Jha, Anosh Joseph, and David Schaich</div>
+          <div class="pub-meta">
+            Physical Review D (2025).
+            <a href="https://arxiv.org/abs/2412.13407">arXiv:2412.13407</a>,
+            <a href="https://journals.aps.org/prd/abstract/10.1103/PhysRevD.111.094516">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We investigate the thermal phase structure of the Berenstein--Maldacena--Nastase (BMN) matrix model using non-perturbative lattice Monte Carlo calculations. Our main analyses span three orders of magnitude in the coupling, involving systems with sizes up to Nτ=24 lattice sites and SU(N) gauge groups with 8≤N≤16. In addition, we carry out extended checks of discretization artifacts for Nτ≤128 and gauge group SU(4). We find results for the deconfinement temperature that interpolate between the perturbative prediction at weak coupling and the large-N dual supergravity calculation at strong coupling. While we confirm that the phase transition is first order for strong coupling, it appears to be continuous for weaker couplings.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag editedvolume">Edited Volume</span>
+          </div>
+          <div class="pub-title">Proceedings of the XXV DAE-BRNS High Energy Physics (HEP) Symposium 2022, 12–16 December, Mohali, India.</div>
+          <div class="pub-authors">Satyajit Jena, Ambresh Shivaji, Vishal Bhardwaj, Kinjalk Lochan, Harvinder Kaur Jassal, Anosh Joseph, and Pankaj Khuswaha</div>
+          <div class="pub-meta">
+            Springer Proceedings in Physics (2024),
+            <a href="https://doi.org/10.1007/978-981-97-0289-3">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              This book presents the proceedings of the XXV DAE-BRNS High Energy Physics (HEP) Symposium 2022, held at the Indian Institute of Science Education and Research Mohali, India. This proceeding marks the 25th edition. The latest results covering both the theoretical and the experimental aspects of the HEP research were presented under 10 broad topics ranging from Astroparticle and cosmology to Higgs and top quark physics, namely (1)  article Astrophysics and Cosmology, (2) Beyond Standard Model Physics, (3) Formal Theory, (4) Detector Development Future Facilities and Experiments, (5) Relativistic Heavy-Ion Physics and QCD, (6) Higgs Physics, (7) Quark and Lepton Flavor Physics, (9) Societal Applications: Medical Physics, Imaging, and (10) Top Quark and EW Physics.
+            </div>
+          </details>
+        </div>
+
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Phase diagram of generalized XY model using tensor renormalization group</div>
+          <div class="pub-authors">Abhishek Samlodia, Vamika Longia, Raghav G. Jha, and Anosh Joseph</div>
+          <div class="pub-meta">
+            Physical Review D (2024).
+            <a href="https://arxiv.org/abs/2404.17504">arXiv:2404.17504</a>,
+            <a href="https://doi.org/10.1103/PhysRevD.110.034504">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We use the higher-order tensor renormalization group method to study the two-dimensional generalized XY model that admits integer and half-integer vortices. This model is the deformation of the classical XY model and has a rich phase structure consisting of nematic, ferromagnetic, and disordered phases and three transition lines belonging to the Berezinskii-Kosterlitz-Thouless (BKT) and Ising class. We explore the model for a wide range of temperatures, T, and the deformation parameter, Δ, and compute specific heat along with integer and half-integer magnetic susceptibility, finding both BKT-like and Ising-like transitions and the region where they meet.
+            </div>
+          </details>
+        </div>
+        
+        <h2>2023</h2>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Nonperturbative phase diagram of two-dimensional N = (2, 2) super-Yang--Mills</div>
+          <div class="pub-authors">Navdeep Singh Dhindsa, Raghav G. Jha, Anosh Joseph, and David Schaich</div>
+          <div class="pub-meta">
+            Physical Review D (2024).
+            <a href="https://arxiv.org/abs/2312.04980">arXiv:2312.04980</a>,
+            <a href="https://doi.org/10.1103/PhysRevD.110.054507">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We consider two-dimensional N = (2, 2) Yang--Mills theory with gauge group SU(N) in Euclidean signature compactified on a torus with thermal fermion boundary conditions imposed on one cycle. We perform non-perturbative lattice analyses of this theory for large 12 ≤ N ≤ 20. Although no holographic dual of this theory is yet known, we conduct numerical investigations to check for features similar to the two-dimensional N = (8, 8) Yang--Mills theory, which has a well-defined gravity dual. We perform lattice field theory calculations to determine the phase diagram, observing a spatial deconfinement transition similar to the maximally supersymmetric case. However, the transition does not continue to low temperature, implying the absence of a topology-changing transition between black hole geometries in any holographic dual for this four-supercharge theory.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag conference">Conference Proceeding</span>
+          </div>
+          <div class="pub-title">Deconfinement Phase Transition in Bosonic BMN Model at General Coupling</div>
+          <div class="pub-authors">Navdeep Singh Dhindsa, Anosh Joseph, Abhishek Samlodia, and David Schaich</div>
+          <div class="pub-meta">
+            Springer Proceedings in Physics (2024).
+            <a href="https://arxiv.org/abs/2308.02538">arXiv:2308.02538</a>,
+            <a href="https://doi.org/10.1007/978-981-97-0289-3_274">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We present our analysis of the deconfinement phase transition in the bosonic BMN matrix model. The model is investigated using a non-perturbative lattice framework. We used the Polyakov loop as the order parameter to monitor the phase transition, and the results were verified using the separatrix ratio. The calculations are performed using a large number of colors and a broad range of temperatures for all couplings. Our results indicate a first-order phase transition in this theory for all the coupling values that connect the perturbative and non-perturbative regimes of the theory.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag conference">Conference Proceeding</span>
+          </div>
+          <div class="pub-title">Investigating Spontaneous SO(10) Symmetry Breaking in Type IIB Matrix Model</div>
+          <div class="pub-authors">Arpith Kumar, Anosh Joseph, and Piyush Kumar</div>
+          <div class="pub-meta">
+            Springer Proceedings in Physics (2024).
+            <a href="https://arxiv.org/abs/2308.03607">arXiv:2308.03607</a>,
+            <a href="https://link.springer.com/chapter/10.1007/978-981-97-0289-3_337">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              Non-perturbative formulations are essential to understand the dynamical compactification of extra dimensions in superstring theories. The type IIB (IKKT) matrix model in the large-N limit is one such conjectured formulation for a ten-dimensional type IIB superstring. In this model, a smooth spacetime manifold is expected to emerge from the eigenvalues of the ten bosonic matrices. When this happens, the SO(10) symmetry in the Euclidean signature must be spontaneously broken. The Euclidean version has a severe sign problem since the Pfaffian obtained after integrating out the fermions is inherently complex. In recent years, the complex Langevin method (CLM) has successfully tackled the sign problem. We apply the CLM method to study the Euclidean version of the type IIB matrix model and investigate the possibility of spontaneous SO(10) symmetry breaking. In doing so, we encounter a singular-drift problem. To counter this, we introduce supersymmetry-preserving deformations with a Myers term. We study the spontaneous symmetry breaking in the original model at the vanishing deformation parameter limit. Our analysis indicates that the phase of the Pfaffian induces the spontaneous SO(10) symmetry breaking in the Euclidean type IIB model.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag conference">Conference Proceeding</span>
+          </div>
+          <div class="pub-title">Investigating the Two-Dimensional Generalized XY Model Using Tensor Networks</div>
+          <div class="pub-authors">Vamika Longia, Anosh Joseph, and Abhishek Samlodia</div>
+          <div class="pub-meta">
+            Springer Proceedings in Physics (2024).
+            <a href="https://arxiv.org/abs/2307.13593">arXiv:2307.13593</a>,
+            <a href="https://link.springer.com/chapter/10.1007/978-981-97-0289-3_79">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              The critical behavior of the two-dimensional XY model has been explored in the literature using various methods. They include the high-temperature expansion (HTE) method, Monte Carlo (MC) approach, strong coupling expansion method, and tensor network (TN) methods. This model undergoes a Berezinskii-Kosterlitz-Thouless (BKT) type of phase transition. This model can be modified by adding spin-nematic interaction terms with a period to give rise to the generalized XY model. The modified model contains excitations of integer and half-integer vortices. These vortices govern the critical behavior of the theory and produce rich physics. With the help of tensor networks, we investigate the transition behavior between the integer vortex binding and half-integer vortex binding phases of the model and how this transition line merges into two BKT transition lines.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag editedvolume">Edited Volume</span>
+          </div>
+          <div class="pub-title">Lattice Supersymmetry and Holography</div>
+          <div class="pub-authors">Anosh Joseph</div>
+          <div class="pub-meta">
+            European Physical Journal - Special Topics (2023).
+            <a href="https://arxiv.org/abs/2302.04559">arXiv:2302.04559</a>,
+            <a href="https://link.springer.com/article/10.1140/epjs/s11734-023-00772-1">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              Over the last twenty years, work based on lattice supersymmetry has generated many new results and insights into the non-perturbative nature of string theory, quantum black holes, and gravity. This endeavor is a broad research program encompassing lattice field theory, supersymmetry, string theory, and quantum gravity. In this volume, we look at a selected subset of the topics covering recent progress in lattice supersymmetry and holography.
+            </div>
+          </details>
+        </div>
+        
+        <h2>2022</h2>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag conference">Conference Proceeding</span>
+          </div>
+          <div class="pub-title">Complex Langevin study of spontaneous symmetry breaking in IKKT matrix model</div>
+          <div class="pub-authors">Arpith Kumar, Anosh Joseph, and Piyush Kumar</div>
+          <div class="pub-meta">
+            Proceedings of Science (2023).
+            <a href="https://arxiv.org/abs/2209.10494">arXiv:2209.10494</a>,
+            <a href="https://doi.org/10.22323/1.430.0213">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              The IKKT matrix model, in the large-N limit, is conjectured to be a non-perturbative definition of the ten-dimensional type IIB superstring theory. In this work, we investigate the possibility of spontaneous breaking of the ten-dimensional rotational symmetry in the Euclidean IKKT model. Since the effective action, after integrating out the fermions, is inherently complex, we use the complex Langevin dynamics to study the model. In order to evade the singular-drift problem in the model, we add supersymmetry preserving deformations and then take the vanishing limit of the deformations. Our analysis suggests that the phase of the Pfaffian indeed induces the spontaneous SO(10) symmetry breaking in the Euclidean IKKT model.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag conference">Conference Proceeding</span>
+          </div>
+          <div class="pub-title">Complex Langevin simulations for PT-symmetric models</div>
+          <div class="pub-authors">Arpith Kumar and Anosh Joseph</div>
+          <div class="pub-meta">
+            Proceedings of Science (2022).
+            <a href="https://arxiv.org/abs/2201.12001">arXiv:2201.12001</a>,
+            <a href="https://doi.org/10.22323/1.396.0124">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              Self-interacting scalar quantum field theories possessing PT-symmetry are physically admissible since their energy spectrum is real and bounded below. However, models with PT-invariant potentials can have complex actions in general and a non-perturbative study of such systems using methods based on traditional Monte Carlo is hindered due to numerical sign problem. In this work we employ complex Langevin based on stochastic quantization to study two-dimensional scalar field theories, including the ones exhibiting PT-symmetry. We also study the simplest supersymmetric version of these systems and address the question on dynamical supersymmetry breaking.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Non-perturbative phase structure of the bosonic BMN matrix model</div>
+          <div class="pub-authors">Navdeep Singh Dhindsa, Raghav G. Jha, Anosh Joseph, Abhishek Samlodia, and David Schaich</div>
+          <div class="pub-meta">
+            Journal of High Energy Physics (2022).
+            <a href="https://arxiv.org/abs/2201.08791">arXiv:2201.08791</a>,
+            <a href="https://doi.org/10.1007/JHEP05(2022)169">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We study the bosonic part of the BMN matrix model for wide ranges of temperatures, values of the deformation parameter, and numbers of colors 16 ≤ N ≤ 48. Using lattice computations, we analyze phase transitions in the model, observing a single first-order transition from a uniform to a gapped phase for all values of the deformation parameter. We study the functional form of the dependence of the critical temperature on the deformation parameter, to describe how our results smoothly interpolate between the limits of the bosonic BFSS model and the gauged Gaussian model.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag conference">Conference Proceeding</span>
+          </div>
+          <div class="pub-title">Thermal phase structure of dimensionally reduced super-Yang--Mills</div>
+          <div class="pub-authors">David Schaich, Raghav G. Jha, and Anosh Joseph</div>
+          <div class="pub-meta">
+            Proceedings of Science (2022).
+            <a href="https://arxiv.org/abs/2201.03097">arXiv:2201.03097</a>,
+            <a href="https://doi.org/10.22323/1.396.0187">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We present our current results from ongoing lattice investigations of the Berenstein--Maldacena--Nastase deformation of maximally supersymmetric Yang--Mills quantum mechanics. We focus on the thermal phase structure of this theory, which depends on both the temperature T and the deformation parameter μ, through the dimensionless ratios T/μ and g=λ/μ3 with λ the 't Hooft coupling. We determine the critical T/μ of the confinement transition for couplings g that span three orders of magnitude, to connect weak-coupling perturbative calculations and large-N dual supergravity predictions in the strong-coupling limit. Analyzing multiple lattice sizes up to Nτ=24 and numbers of colors up to N=16 allows initial checks of the large-N continuum limit.
+            </div>
+          </details>
+        </div>
+        
+        <h2>2021</h2>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag conference">Conference Proceeding</span>
+          </div>
+          <div class="pub-title">Large-N limit of two-dimensional Yang--Mills theory with four supercharges</div>
+          <div class="pub-authors">Navdeep Singh Dhindsa, Raghav G. Jha, Anosh Joseph, and David Schaich</div>
+          <div class="pub-meta">
+            Proceedings of Science (2022).
+            <a href="https://arxiv.org/abs/2109.01001">arXiv:2109.01001</a>,
+            <a href="https://doi.org/10.22323/1.396.0433">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We study the two-dimensional Yang--Mills theory with four supercharges in the large-N limit. By using thermal boundary conditions, we analyze the internal energy and the distribution of scalars. We compare their behavior to the maximally supersymmetric case with sixteen supercharges, which is known to admit a holographic interpretation. Our lattice results for the scalar distribution show no visible dependence on N and the energy at strong coupling appears independent of temperature.
+            </div>
+          </details>
+        </div>
+        
+        <h2>2020</h2>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Probing non-perturbative supersymmetry breaking through lattice path integrals</div>
+          <div class="pub-authors">Navdeep Singh Dhindsa and Anosh Joseph</div>
+          <div class="pub-meta">
+            European Physical Journal Plus (2022).
+            <a href="https://arxiv.org/abs/2011.08109">arXiv:2011.08109</a>,
+            <a href="https://doi.org/10.1140/epjp/s13360-022-03389-w">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We investigate non-perturbative supersymmetry breaking in various models of quantum mechanics, including an interesting class of PT-invariant models, using lattice path integrals. These theories are discretized on a temporal Euclidean lattice with anti-periodic boundary conditions. Hybrid Monte Carlo algorithm is used to update the field configurations to their equilibrium values. We used the Ward identities and expectation values of superpotentials as tools for probing supersymmetry breaking.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Complex Langevin dynamics and supersymmetric quantum mechanics</div>
+          <div class="pub-authors">Anosh Joseph and Arpith Kumar</div>
+          <div class="pub-meta">
+            Journal of High Energy Physics (2021).
+            <a href="https://arxiv.org/abs/2011.08107">arXiv:2011.08107</a>,
+            <a href="https://doi.org/10.1007/JHEP10%282021%29186">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              Using complex Langevin method we probe the possibility of dynamical supersymmetry breaking in supersymmetric quantum mechanics models with complex actions. The models we consider are invariant under the combined operation of parity and time reversal, in addition to supersymmetry. When actions are complex traditional Monte Carlo methods based on importance sampling fail. Models with dynamically broken supersymmetry can exhibit sign problem due to the vanishing of the partition function. Complex Langevin method can successfully evade the sign problem. Our simulations suggest that complex Langevin method can reliably predict the absence or presence of dynamical supersymmetry breaking in these one-dimensional models with complex actions.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag conference">Conference Proceeding</span>
+          </div>
+          <div class="pub-title">Thermal phase structure of a supersymmetric matrix model</div>
+          <div class="pub-authors">David Schaich, Raghav G. Jha, and Anosh Joseph</div>
+          <div class="pub-meta">
+            Proceedings of Science (2020).
+            <a href="https://arxiv.org/abs/2003.01298">arXiv:2003.01298</a>,
+            <a href="https://doi.org/10.22323/1.363.0069">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We present initial results from ongoing lattice investigations into the thermal phase structure of the Berenstein--Maldacena--Nastase deformation of maximally supersymmetric Yang--Mills quantum mechanics. The phase diagram of the theory depends on both the temperature T and the deformation parameter μ, through the dimensionless ratios T/μ and g≡λ/μ3 with λ the 't Hooft coupling. Considering couplings g that span three orders of magnitude, we reproduce the weak-coupling perturbative prediction for the deconfinement T/μ and approach recent large-N dual supergravity analyses in the strong-coupling limit. We are carrying out calculations with lattice sizes up to Nτ=24 and numbers of colors up to N=16, to allow initial checks of the large-N continuum limit.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Lefschetz Thimbles and Quantum Phases in Zero-Dimensional Bosonic Models</div>
+          <div class="pub-authors">R. Bharathkumar and Anosh Joseph</div>
+          <div class="pub-meta">
+            The European Physical Journal C (2020).
+            <a href="https://arxiv.org/abs/2001.10486">arXiv:2001.10486</a>,
+            <a href="https://doi.org/10.1140/epjc/s10052-020-08493-8">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              In this paper, by analyzing the underlying Lefschetz thimble structure, we study quantum phases in zero-dimensional scalar field theories with complex actions. Using first principles, we derive the Lefschetz thimble equations of these models, and discuss the issues when we apply the same calculations for more complicated systems. We also derive the conditional expressions involving relations among the parameters of the model, that would help us predict quantum phase transitions in these systems.
+            </div>
+          </details>
+        </div>
+        
+        <h2>2019</h2>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag book">Book</span>
+          </div>
+          <div class="pub-title">Markov Chain Monte Carlo Methods in Quantum Field Theories: A Modern Primer</div>
+          <div class="pub-authors">Anosh Joseph</div>
+          <div class="pub-meta">
+            SpringerBriefs in Physics (2020).
+            <a href="https://arxiv.org/abs/1912.10997">arXiv:1912.10997</a>,
+            <a href="https://doi.org/10.1007/978-3-030-46044-0">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              This primer is a comprehensive collection of analytical and numerical techniques that can be used to extract the non-perturbative physics of quantum field theories. The intriguing connection between Euclidean Quantum Field Theories (QFTs) and statistical mechanics can be used to apply Markov Chain Monte Carlo (MCMC) methods to investigate strongly coupled QFTs. The overwhelming amount of reliable results coming from the field of lattice quantum chromodynamics stands out as an excellent example of MCMC methods in QFTs in action. MCMC methods have revealed the non-perturbative phase structures, symmetry breaking, and bound states of particles in QFTs. The applications also resulted in new outcomes due to cross-fertilization with research areas such as AdS/CFT correspondence in string theory and condensed matter physics.
+              
+              The book is aimed at advanced undergraduate students and graduate students in physics and applied mathematics, and researchers in MCMC simulations and QFTs. At the end of this book the reader will be able to apply the techniques learned to produce more independent and novel research in the field.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Complex Langevin Simulations of Zero-dimensional Supersymmetric Quantum Field Theories</div>
+          <div class="pub-authors">Anosh Joseph and Arpith Kumar</div>
+          <div class="pub-meta">
+            Physical Review D (2019).
+            <a href="https://arxiv.org/abs/1908.04153">arXiv:1908.04153</a>,
+            <a href="https://doi.org/10.1103/PhysRevD.100.074507">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We investigate the possibility of spontaneous supersymmetry breaking in a class of zero-dimensional N = 2 supersymmetric quantum field theories, with complex actions, using complex Langevin dynamics and stochastic quantization. Our simulations successfully capture the presence or absence of supersymmetry breaking in these models. The expectation value of the auxiliary field under twisted boundary conditions was used as an order parameter to capture spontaneous supersymmetry breaking in these models.
+            </div>
+          </details>
+        </div>
+        
+        <h2>2018</h2>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Complex Langevin Dynamics in Large N Unitary Matrix Models</div>
+          <div class="pub-authors">Pallab Basu, Kasi Jaswin, and Anosh Joseph</div>
+          <div class="pub-meta">
+            Physical Review D (2018).
+            <a href="https://arxiv.org/abs/1802.10381">arXiv:1802.10381</a>,
+            <a href="https://doi.org/10.1103/PhysRevD.98.034501">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              Using complex Langevin dynamics we examine the phase structure of complex unitary matrix models and compare the numerical results with analytic results found at large N. The actions we consider are manifestly complex, and thus the dominant contribution to the path integral comes from the space of complexified gauge field configuration. For this reason, the eigenvalues of unitary matrix lie off the unit circle and venture out in the complex plane. One example of a complex unitary matrix model, with Polyakov line as the unitary matrix, is an effective description of a QCD at finite density and temperature with N number of colors and Nf number of quark flavors defined on the manifold S1×S3. A distinct feature of this model, the occurrence of a series of Gross-Witten-Wadia transitions, as a function of the quark chemical potential, is reproduced using complex Langevin simulations. We simulate several other observables including Polyakov lines and quark number density, for large N and Nf and found excellent match with the analytic results.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Nonperturbative study of dynamical SUSY breaking in N = (2, 2) Yang-Mills theory</div>
+          <div class="pub-authors">Simon Catterall, Raghav G. Jha, and Anosh Joseph</div>
+          <div class="pub-meta">
+            Physical Review D (2018).
+            <a href="https://arxiv.org/abs/1801.00012">arXiv:1801.00012</a>,
+            <a href="https://doi.org/10.1103/PhysRevD.97.054504">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We examine the possibility of dynamical supersymmetry breaking in two-dimensional N = (2, 2) supersymmetric Yang-Mills theory. The theory is discretized on a Euclidean spacetime lattice using a supersymmetric lattice action. We compute the vacuum energy of the theory at finite temperature and take the zero temperature limit. Supersymmetry will be spontaneously broken in this theory if the measured ground state energy is non-zero. By performing simulations on a range of lattices up to 96×96 we are able to perform a careful extrapolation to the continuum limit for a wide range of temperatures. Subsequent extrapolations to the zero temperature limit yield an upper bound on the ground state energy density. We find the energy density to be statistically consistent with zero in agreement with the absence of dynamical supersymmetry breaking in this theory.
+            </div>
+          </details>
+        </div>
+        
+        <h2>2017</h2>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag conference">Conference Proceeding</span>
+          </div>
+          <div class="pub-title">N=2* Yang-Mills on the Lattice</div>
+          <div class="pub-authors">Anosh Joseph</div>
+          <div class="pub-meta">
+            The European Physical Journal - Web of Conferences (2018).
+            <a href="https://arxiv.org/abs/1710.11390">arXiv:1710.11390</a>,
+            <a href="https://doi.org/10.1051/epjconf/201817508019">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              The N = 2* Yang-Mills theory in four dimensions is a non-conformal theory that appears as a mass deformation of maximally supersymmetric N = 4 Yang-Mills theory. This theory also takes part in the AdS/CFT correspondence and its gravity dual is type IIB supergravity on the Pilch-Warner background. The finite temperature properties of this theory have been studied recently in the literature. It has been argued that at large N and strong coupling this theory exhibits no thermal phase transition at any non-zero temperature. The low temperature N = 2* plasma can be compared to the QCD plasma. We provide a lattice construction of N = 2* Yang-Mills on a hypercubic lattice starting from the N = 4 gauge theory. The lattice construction is local, gauge-invariant, free from fermion doubling problem and preserves a part of the supersymmetry. This nonperturbative formulation of the theory can be used to provide a highly nontrivial check of the AdS/CFT correspondence in a non-conformal theory.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Lattice formulation of N=2* Yang-Mills</div>
+          <div class="pub-authors">Anosh Joseph</div>
+          <div class="pub-meta">
+            Physical Review D (2018).
+            <a href="https://arxiv.org/abs/1710.10172">arXiv:1710.10172</a>,
+            <a href="https://doi.org/10.1103/PhysRevD.97.094508">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We formulate N = 2* supersymmetric Yang-Mills theory on a Euclidean spacetime lattice using the method of topological twisting. The lattice formulation preserves one scalar supersymmetry charge at finite lattice spacing. The lattice theory is also local, gauge invariant and free from doublers. We can use the lattice formulation of N = 2* supersymmetric Yang-Mills to study finite temperature nonperturbative sectors of the theory and thus validate the gauge-gravity duality conjecture in a nonconformal theory.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Abelian Tensor Models on the Lattice</div>
+          <div class="pub-authors">Soumyadeep Chaudhuri, Victor I. Giraldo-Rivera, Anosh Joseph, R. Loganayagam, and Junggi Yoon</div>
+          <div class="pub-meta">
+            Physical Review D (2018).
+            <a href="https://arxiv.org/abs/1705.01930">arXiv:1705.01930</a>,
+            <a href="https://doi.org/10.1103/PhysRevD.97.086007">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We consider a chain of Abelian Klebanov-Tarnopolsky fermionic tensor models coupled through quartic nearest-neighbor interactions. We characterize the gauge-singlet spectrum for small chains (L = 2,3,4,5) and observe that the spectral statistics exhibits strong evidences in favor of quasi-many body localization.
+            </div>
+          </details>
+        </div>
+        
+        <h2>2016</h2>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag conference">Conference Proceeding</span>
+          </div>
+          <div class="pub-title">5D Maximally Supersymmetric Yang-Mills on the Lattice</div>
+          <div class="pub-authors">Anosh Joseph</div>
+          <div class="pub-meta">
+            Proceedings of Science (2017).
+            <a href="https://arxiv.org/abs/1610.03275">arXiv:1610.03275</a>,
+            <a href="https://doi.org/10.22323/1.256.0220">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We provide details of the lattice construction of five-dimensional maximally supersymmetric Yang-Mills theory. The lattice theory is supersymmetric, gauge invariant and free from spectrum doublers. Such a supersymmetric lattice formulation is interesting as it can be used for non-perturbative explorations of the five-dimensional theory, which has a known gravitational dual.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">A Euclidean Lattice Formulation of D=5 Maximally Supersymmetric Yang-Mills Theory</div>
+          <div class="pub-authors">Anosh Joseph</div>
+          <div class="pub-meta">
+            Journal of High Energy Physics (2016).
+            <a href="https://arxiv.org/abs/1604.02707">arXiv:1604.02707</a>,
+            <a href="https://doi.org/10.1007/JHEP06%282016%29030">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We construct lattice action for five-dimensional maximally supersymmetric Yang-Mills theory. This supersymmetric lattice formulation can be used to explore the non-perturbative regime of the continuum target theory, which has a known gravitational dual.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Continuum limit of the leading-order HQET form factor in Bs​→Kℓν decays</div>
+          <div class="pub-authors">Felix Bahr, Debasish Banerjee, Fabio Bernardoni, Anosh Joseph, Mateusz Koren, Hubert Simma, and Rainer Sommer</div>
+          <div class="pub-meta">
+            Physics Letters B (2016).
+            <a href="https://arxiv.org/abs/1601.04277">arXiv:1601.04277</a>,
+            <a href="https://doi.org/10.1016/j.physletb.2016.03.088">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We discuss the computation of form factors for semi-leptonic decays of B-, Bs- mesons in lattice QCD. Considering in particular the example of the static Bs form factors we demonstrate that after non-perturbative renormalization the continuum limit can be taken with confidence. The resulting precision is of interest for extractions of Vub. The size of the corrections of order 1/mb is just estimated at present but it is expected that their inclusion does not pose significant difficulties.
+            </div>
+          </details>
+        </div>
+        
+        <h2>2015</h2>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Review of Lattice Supersymmetry and Gauge-Gravity Duality</div>
+          <div class="pub-authors">Anosh Joseph</div>
+          <div class="pub-meta">
+            International Journal of Modern Physics A (2015).
+            <a href="https://arxiv.org/abs/1509.01440">arXiv:1509.01440</a>,
+            <a href="https://doi.org/10.1142/S0217751X15300549">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We review the status of recent investigations on validating the gauge-gravity duality conjecture through numerical simulations of strongly coupled maximally supersymmetric thermal gauge theories. In the simplest setting, the gauge-gravity duality connects systems of D0-branes and black hole geometries at finite temperature to maximally supersymmetric gauged quantum mechanics at the same temperature. Recent simulations show that non-perturbative gauge theory results give excellent agreement with the quantum gravity predictions, thus proving strong evidence for the validity of the duality conjecture and more insight into quantum black holes and gravity.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Iso-vector and Iso-scalar Tensor Charges of the Nucleon from Lattice QCD</div>
+          <div class="pub-authors">Tanmoy Bhattacharya, Vincenzo Cirigliano, Saul Cohen, Rajan Gupta, Anosh Joseph, Huey-Wen Lin, and Boram Yoon</div>
+          <div class="pub-meta">
+            Physical Review D (2015).
+            <a href="https://arxiv.org/abs/1506.06411">arXiv:1506.06411</a>,
+            <a href="https://doi.org/10.1103/PhysRevD.92.094511">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We present results for the iso-vector and flavor diagonal tensor charges gu−dT, guT, gdT, and gsT needed to probe novel tensor interactions at the TeV scale in neutron and nuclear β-decays and the contribution of the quark electric dipole moment (EDM) to the neutron EDM. The lattice QCD calculations were done using nine ensembles of gauge configurations generated by the MILC collaboration using the HISQ action with 2+1+1 dynamical flavors. These ensembles span three lattice spacings a≈0.06,0.09 and 0.12 fm and three quark masses corresponding to the pion masses Mπ≈130,220 and 310 MeV. Using estimates from these ensembles, we quantify all systematic uncertainties and perform a simultaneous extrapolation in the lattice spacing, volume and light quark masses for the connected contributions. The final estimates of the connected nucleon (proton) tensor charge for the iso-vector combination is gu−dT=1.020(76) in the MS¯ scheme at 2 GeV. The additional disconnected quark loop contributions needed for the flavor-diagonal matrix elements are calculated using a stochastic estimator employing the truncated solver method with the all-mode-averaging technique. We find that the size of the disconnected contribution is smaller than the statistical error in the connected contribution. This allows us to bound the disconnected contribution and include it as an additional uncertainty in the flavor-diagonal charges. After a continuum extrapolation, we find guT=0.774(66), gdT=−0.233(28) and gu+dT=0.541(67). The strangeness tensor charge, that can make a significant contribution to the neutron EDM due to the large ratio ms/mu,d, is gsT=0.008(9) in the continuum limit.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag conference">Conference Proceeding</span>
+          </div>
+          <div class="pub-title">Precision calculations of nucleon charges gA​, gS​, gT</div>
+          <div class="pub-authors">Rajan Gupta, Tanmoy Bhattacharya, Anosh Joseph, Huey-Wen Lin, and Boram Yoon</div>
+          <div class="pub-meta">
+            Proceedings of Science (2015).
+            <a href="https://arxiv.org/abs/1501.07639">arXiv:1501.07639</a>,
+            <a href="https://doi.org/10.22323/1.214.0152">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We present a detailed analysis of statistical and systematic errors in the calculation of matrix elements of iso-vector scalar, axial and tensor charges between a neutron and a proton state. These analyses are being done on dynamical Nf=2+1+1 HISQ configurations generated by the MILC Collaboration using valence clover fermions. Using ensembles at three values of the lattice spacing (a=0.12, 0.09, and 0.06 fm) and three values of the quark mass (Mπ≈310, 220 and 130 MeV) we find that the estimates of the tensor charge are stable and it can be extracted with 5% precision with O(10,000) measurements. We also find that higher statistics are needed to resolve the various uncertainties in the calculation of gA and improve the signal in gS, which with present data has large errors. A brief status report on the mixing and renormalization of novel operators contributing to nEDM is also given.
+            </div>
+          </details>
+        </div>
+        
+        <h2>2014</h2>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag conference">Conference Proceeding</span>
+          </div>
+          <div class="pub-title">Probing TeV physics through lattice neutron-decay matrix elements</div>
+          <div class="pub-authors">Huey-Wen Lin, Tanmoy Bhattacharya, Saul D. Cohen, Rajan Gupta, and Anosh Joseph</div>
+          <div class="pub-meta">
+            Proceedings of Science (2014).
+            <a href="https://doi.org/10.22323/1.202.0055">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              Precision low-energy measurements provide constraints on the Standard Model and can discern the signatures predicted for particles beyond the Standard Model. In the case of the neutron beta decay, potential new TeV-scale particles may be probed through scalar and tensor interactions. Lattice QCD provides the most accurate low-energy nucleon matrix elements needed to relate the experiments to BSM constraints. These constraints from the low-energy sector will be compared with current and near-future limits provided by the LHC.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag conference">Conference Proceeding</span>
+          </div>
+          <div class="pub-title">Lattice formulations of supersymmetric gauge theories with matter fields</div>
+          <div class="pub-authors">Anosh Joseph</div>
+          <div class="pub-meta">
+            Proceedings of Science (2014).
+            <a href="https://arxiv.org/abs/1409.8508">arXiv:1409.8508</a>,
+            <a href="https://doi.org/10.22323/1.214.0263">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              Certain classes of supersymmetric gauge theories, including the well known N=4 supersymmetric Yang-Mills theory, that takes part in the AdS/CFT correspondence, can be formulated on a Euclidean spacetime lattice using the techniques of exact lattice supersymmetry. Great ideas such as topological field theories, Dirac-Kaehler fermions, geometric discretization all come together to create supersymmetric lattice theories that are gauge-invariant, doubler free, local and exact supersymmetric. We discuss the recent lattice constructions of supersymmetric Yang-Mills theories in two and three dimensions coupled to matter fields in various representations of the color group.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Two-dimensional N = (2, 2) lattice gauge theories with matter in higher representations</div>
+          <div class="pub-authors">Anosh Joseph</div>
+          <div class="pub-meta">
+            Journal of High Energy Physics (2014).
+            <a href="https://arxiv.org/abs/1403.4390">arXiv:1403.4390</a>,
+            <a href="https://doi.org/10.1007/JHEP07%282014%29067">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We construct two-dimensional N = (2, 2) supersymmetric gauge theories on a Euclidean spacetime lattice with matter in the two-index symmetric and anti-symmetric representations of SU(Nc) color group. These lattice theories preserve a subset of the supercharges exact at finite lattice spacing. The method of topological twisting is used to construct such theories in the continuum and then the geometric discretization scheme is used to formulate them on the lattice. The lattice theories obtained this way are gauge-invariant, free from fermion doubling problem and exact supersymmetric at finite lattice spacing. We hope that these lattice constructions further motivate the nonperturbative explorations of models inspired by technicolor, orbifolding and orientifolding in string theories and the Corrigan-Ramond limit.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag conference">Conference Proceeding</span>
+          </div>
+          <div class="pub-title">Probing TeV scale physics in precision UCN decays</div>
+          <div class="pub-authors">Rajan Gupta, Tanmoy Bhattacharya, Anosh Joseph, Saul D. Cohen, and Huey-Wen Lin</div>
+          <div class="pub-meta">
+            Proceedings of Science (2014).
+            <a href="https://arxiv.org/abs/1403.2447">arXiv:1403.2447</a>,
+            <a href="https://doi.org/10.22323/1.187.0409">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We present the calculation of matrix elements of iso-vector scalar, axial and tensor charges between a neutron and a proton state on dynamical Nf=2+1+1 HISQ configurations generated by the MILC Collaboration using valence clover fermions. These matrix elements are needed to probe novel scalar and tensor interactions in neutron beta-decay that can arise in extensions to the Standard Model at the TeV scale. Results are presented at one value of the lattice spacing, a=0.12 fm, and two values of light quarks corresponding to Mπ=310 and 220 MeV. We discuss two sources of systematic errors, contribution of excited states to these matrix elements and the renormalization constants, and the efficacy of methods used to control them.
+            </div>
+          </details>
+        </div>
+        
+        <h2>2013</h2>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Supersymmetric quiver gauge theories on the lattice</div>
+          <div class="pub-authors">Anosh Joseph</div>
+          <div class="pub-meta">
+            Journal of High Energy Physics (2014).
+            <a href="https://arxiv.org/abs/1311.5111">arXiv:1311.5111</a>,
+            <a href="https://doi.org/10.1007/JHEP01%282014%29093">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              In this paper we detail the lattice constructions of several classes of supersymmetric quiver gauge theories in two and three Euclidean spacetime dimensions possessing exact supersymmetry at finite lattice spacing. Such constructions are obtained through the methods of topological twisting and geometric discretization of Euclidean Yang--Mills theories with eight and sixteen supercharges in two and three dimensions. We detail the lattice constructions of two-dimensional quiver gauge theories possessing four and eight supercharges and three-dimensional quiver gauge theories possessing eight supercharges.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Lattice formulation of three-dimensional N=4 gauge theory with fundamental matter fields</div>
+          <div class="pub-authors">Anosh Joseph</div>
+          <div class="pub-meta">
+            Journal of High Energy Physics (2013).
+            <a href="https://arxiv.org/abs/1307.3281">arXiv:1307.3281</a>,
+            <a href="https://doi.org/10.1007/JHEP09%282013%29046">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We construct lattice action for three-dimensional N = 4 supersymmetric gauge theory with matter fields in the fundamental representation.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Nucleon Charges and Electromagnetic Form Factors from 2+1+1-Flavor Lattice QCD</div>
+          <div class="pub-authors">Tanmoy Bhattacharya, Saul D. Cohen, Rajan Gupta, Anosh Joseph, Huey-Wen Lin, and Boram Yoon</div>
+          <div class="pub-meta">
+            Physical Review D (2014).
+            <a href="https://arxiv.org/abs/1306.5435">arXiv:1306.5435</a>,
+            <a href="https://doi.org/10.1103/PhysRevD.89.094502">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We present lattice-QCD results on the nucleon isovector axial, scalar and tensor charges, the isovector electromagnetic Dirac and Pauli form factors, and the connected parts of the isoscalar charges. The calculations have been done using two ensembles of HISQ lattices generated by the MILC Collaboration with 2+1+1 dynamical flavors at a lattice spacing of 0.12 fm and with light-quark masses corresponding to pions with masses 310 and 220 MeV. We perform a systematic study including excited-state degrees of freedom and examine the dependence of the extracted nucleon matrix elements on source-sink separation. This study demonstrates with high-statistics data that including excited-state contributions and generating data at multiple separations is necessary to remove contamination that would otherwise lead to systematic error. We also determine the renormalization constants of the associated quark bilinear operators in the RI-sMOM scheme and make comparisons of our renormalized results with previous dynamical-lattice calculations.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Twisted supersymmetries in lattice N=4 super Yang-Mills theory</div>
+          <div class="pub-authors">Simon Catterall, Joel Giedt, and Anosh Joseph</div>
+          <div class="pub-meta">
+            Journal of High Energy Physics (2013).
+            <a href="https://arxiv.org/abs/1306.3891">arXiv:1306.3891</a>,
+            <a href="https://doi.org/10.1007/JHEP10%282013%29166">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              Recently it has been shown how a topologically twisted version of N = 4 super Yang-Mills may be discretized in such a way as to preserve one scalar supersymmetry at nonzero lattice spacing. The remaining fifteen supersymmetries are broken by terms of O(a) where a is the lattice spacing. One would like to know whether these remaining supersymmetries are regained in the continuum limit a→0 and, if not, how much tuning of the couplings in the lattice action is required. In this paper we derive the form of these additional twisted supersymmetries by combining a set of discrete R-symmetries of the continuum theory with the action of the scalar supersymmetry. We then argue that restoration of rotational symmetry in the continuum limit of the lattice theory likely implies restoration of R-symmetry and hence should lead to an automatic enhancement to the full N = 4 supersymmetry without further fine-tuning.
+            </div>
+          </details>
+        </div>
+        
+        <h2>2012</h2>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag conference">Conference Proceeding</span>
+          </div>
+          <div class="pub-title">Probing novel TeV physics through precision calculations of scalar and tensor charges of the nucleon</div>
+          <div class="pub-authors">Rajan Gupta, Tanmoy Bhattacharya, Anosh Joseph, Saul D. Cohen, and Huey-Wen Lin</div>
+          <div class="pub-meta">
+            Proceedings of Science (2012).
+            <a href="https://arxiv.org/abs/1212.4889">arXiv:1212.4889</a>,
+            <a href="https://doi.org/10.22323/1.164.0114">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We present an update on the calculation of matrix elements of iso-vector scalar, axial and tensor charges between a neutron and a proton state. These matrix elements are needed to probe novel scalar and tensor interactions in neutron beta-decay that can arise in extensions of the Standard Model at the TeV scale. Our calculations are being done using valence clover fermions on dynamical N_f=2+1+1 HISQ configurations generated by the MILC Collaboration. We provide preliminary estimates of the dependence of these matrix elements on the light quark masses, lattice spacing, and the time separation between the source and sink of the nucleons. We also find that the renormalization constants calculated using the RI-sMOM scheme are close to unity for the HYP smeared HISQ lattices.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag conference">Conference Proceeding</span>
+          </div>
+          <div class="pub-title">Probing TeV physics through neutron-decay matrix elements</div>
+          <div class="pub-authors">Huey-Wen Lin, Saul D. Cohen, Tanmoy Bhattacharya, Rajan Gupta, and Anosh Joseph</div>
+          <div class="pub-meta">
+            Proceedings of Science (2012).
+            <a href="https://doi.org/10.22323/1.139.0273">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We study the presence of new scalar and tensor interactions beyond the Standard Model at the TeV scale via high-precision calculations of low-energy observables with lattice gauge theory. We compute matrix elements of isovector bilinear operators between nucleon states to high precision using valence clover fermions on dynamical Nf = 2 + 1 + 1 HISQ configurations generated by the MILC Collaboration. These ensembles are available at multiple lattice spacings and sea-quark masses yielding pion masses as light as 140 MeV, allowing us to remove the large systematic uncertainties associated with the chiral and continuum extrapolations. In this presentation, we will show results from 2 lattice spacings, 0.12 and 0.09 fm with pion masses less than 310 MeV
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag conference">Conference Proceeding</span>
+          </div>
+          <div class="pub-title">Theoretical Bounds on New Four-Fermion Interactions and TeV Scale Physics</div>
+          <div class="pub-authors">Tanmoy Bhattacharya, Rajan Gupta, Anosh Joseph, Huey-Wen Lin, and Saul D. Cohen</div>
+          <div class="pub-meta">
+            Proceedings of Science (2012).
+            <a href="https://arxiv.org/abs/1203.6843">arXiv:1203.6843</a>,
+            <a href="https://doi.org/10.22323/1.139.0272">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              The standard model weak interactions can be described by four-fermion V-A operators at low energies. New physics at the TeV scale can, however, generate the other Lorentz structures. In this talk, we review the constraints on such interactions from nuclear and hadronic decays, as well as from collider searches. Currently the most stringent bounds come from the analysis of the 0+ to 0+ nuclear and the pi to e nu gamma radiative pion decays. In the near future, the ultracold neutron beta decay experiments and the direct LHC measurements will compete in setting the most stringent bounds, provided, however, that the neutron-to-proton non-perturbative transition matrix elements can be calculated to a level of 10-20% accuracy.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag conference">Conference Proceeding</span>
+          </div>
+          <div class="pub-title">Probing TeV scale physics via ultra cold neutron decays and calculating non-standard baryon matrix elements</div>
+          <div class="pub-authors">Rajan Gupta, Tanmoy Bhattacharya, Anosh Joseph, Huey-Wen Lin, and Saul D. Cohen</div>
+          <div class="pub-meta">
+            Proceedings of Science (2011).
+            <a href="https://arxiv.org/abs/1202.1320">arXiv:1202.1320</a>,
+            <a href="https://doi.org/10.22323/1.139.0271">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We motivate undertaking precision analyses of neutron decays to look for signatures of new scalar and tensor interactions that can arise in extensions of the Standard Model at the TeV scale. The key ingrediant needed to connect experimental data with theoretical analysis are high-precision calculations of matrix elements of isovector bilinear operators between the decaying neutron and final state proton. We describe the status of our Lattice QCD program of using valence clover fermions on dynamical N_f=2+1+1 HISQ configurations generated by the MILC Collaboration. On the theoretical side we use the effective field theory method and provide both model independent and dependent analyses to obtain bounds on possible scalar and tensor interactions, both from low energy experiments and LHC data.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag conference">Conference Proceeding</span>
+          </div>
+          <div class="pub-title">Investigating the sign problem for two-dimensional N = (2, 2) and N = (8, 8) lattice super Yang--Mills theories</div>
+          <div class="pub-authors">Richard Galvez, Simon Catterall, Anosh Joseph, and Dhagash Mehta</div>
+          <div class="pub-meta">
+            Proceedings of Science (2011).
+            <a href="https://arxiv.org/abs/1201.1924">arXiv:1201.1924</a>,
+            <a href="https://doi.org/10.22323/1.139.0064">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              Recently there has been some controversy in the literature concerning the existence of a fermion sign problem in the N = (2, 2) supersymmetric Yang--Mills (SYM) theories on the lattice. In this work, we address this issue by conducting Monte Carlo simulations not only for N = (2, 2) but also for N = (8, 8) SYM in two dimensions for the U(N) theories with N = 2, using the new ideas derived from topological twisting followed by geometric discretization. Our results from simulations provide the evidence that these theories do not suffer from a sign problem as the continuum limit is approached. These results thus boost confidence that these new lattice formulations can be used successfully to explore the nonperturbative aspects of the four-dimensional N = 4 SYM theory.
+            </div>
+          </details>
+        </div>
+        
+        <h2>2011</h2>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">On the sign problem in 2D lattice super Yang-Mills</div>
+          <div class="pub-authors">Simon Catterall, Richard Galvez, Anosh Joseph, and Dhagash Mehta</div>
+          <div class="pub-meta">
+            Journal of High Energy Physics (2011).
+            <a href="https://arxiv.org/abs/1112.3588">arXiv:1112.3588</a>,
+            <a href="https://doi.org/10.1007/JHEP01%282012%29108">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              In recent years a new class of supersymmetric lattice theories have been proposed which retain one or more exact supersymmetries for non-zero lattice spacing. Recently there has been some controversy in the literature concerning whether these theories suffer from a sign problem. In this paper we address this issue by conducting simulations of the N=(2, 2) and N=(8, 8) supersymmetric Yang--Mills theories in two dimensions for the U(N) theories with N=2,3,4, using the new twisted lattice formulations. Our results provide evidence that these theories do not suffer from a sign problem in the continuum limit. These results thus boost confidence that the new lattice formulations can be used successfully to explore non-perturbative aspects of four-dimensional N=4 supersymmetric Yang--Mills theory.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag conference">Conference Proceeding</span>
+          </div>
+          <div class="pub-title">Supersymmetric gauge theories on the lattice: Pfaffian phases and the Neuberger 0/0 problem</div>
+          <div class="pub-authors">Dhagash Mehta, Simon Catterall, Richard Galvez, and Anosh Joseph</div>
+          <div class="pub-meta">
+            Physical Review D (2025).
+            <a href="https://arxiv.org/abs/1112.5413">arXiv:1112.5413</a>,
+            <a href="https://doi.org/10.22323/1.139.0078">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              Recently a class of supersymmetric gauge theories have been successfully implemented on the lattice. However, there has been an ongoing debate on whether lattice versions of some of these theories suffer from a sign problem, with independent simulations for the N = (2, 2) supersymmetric Yang-Mills theories in two dimensions yielding seemingly contradictory results. Here, we address this issue from an interesting theoretical point of view. We conjecture that the sign problem observed in some of the simulations is related to the so called Neuberger 0/0 problem, which arises in ordinary non-supersymmetric lattice gauge theories, and prevents the realization of Becchi-Rouet-Stora-Tyutin symmetry on the lattice. After discussing why we expect a sign problem in certain classes of supersymmetric lattice gauge theories far from the continuum limit, we argue that these problems can be evaded by use of a non-compact parametrization of the gauge link fields.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Supersymmetric Yang-Mills theories with exact supersymmetry on the lattice</div>
+          <div class="pub-authors">Anosh Joseph</div>
+          <div class="pub-meta">
+            International Journal of Modern Physics A (2011).
+            <a href="https://arxiv.org/abs/1110.5983">arXiv:1110.5983</a>,
+            <a href="https://doi.org/10.1142/S0217751X11054863">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              Inspired by the ideas from topological field theory it is possible to rewrite the supersymmetric charges of certain classes of extended supersymmetric Yang--Mills (SYM) theories in such a way that they are compatible with the discretization on a Euclidean spacetime lattice. Such theories are known as maximally twisted SYM theories. In this review we discuss the construction and some applications of such classes of theories. The one-loop perturbative renormalization of the four-dimensional lattice N = 4 SYM is discussed in particular. The lattice theories constructed using twisted approach play an important role in investigating the thermal phases of strongly coupled SYM theories and also the thermodynamic properties of their dual gravitational theories.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">An Object oriented code for simulating supersymmetric Yang-Mills theories</div>
+          <div class="pub-authors">Simon Catterall and Anosh Joseph</div>
+          <div class="pub-meta">
+            Physical Review D (2025).
+            <a href="https://arxiv.org/abs/1108.1503">arXiv:1108.1503</a>,
+            <a href="https://doi.org/10.1016/j.cpc.2012.01.024">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              Discretization of supersymmetric Yang--Mills (SYM) theories is an old problem in lattice field theory. It has resisted solution until recently when new ideas drawn from orbifold constructions and topological field theories have been brought to bear on the question. The result has been the creation of a new class of lattice gauge theories in which the lattice action is invariant under one or more supersymmetries. The resultant theories are local, free of doublers and also possess exact gauge-invariance. In principle they form the basis for a truly non-perturbative definition of the continuum SYM theories. In the continuum limit they lead to a version of the Yang-Mills theory formulated in terms of twisted fields. In this paper, we briefly review these ideas and then go on to describe the details of a C++ code, which can be used to simulate these theories. We sketch the design of the code, with particular emphasis being placed on SYM theories with N = 2 in two dimensions and N = 4 in three and four dimensions, making one-to-one comparisons between the essential components of the SYM theories and their corresponding counterparts appearing in the simulation.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Perturbative renormalization of lattice N=4 super Yang-Mills theory</div>
+          <div class="pub-authors">Simon Catterall, Eric Dzienkowski, Joel Giedt, Anosh Joseph, and Robert Wells</div>
+          <div class="pub-meta">
+            Journal of High Energy Physics (2011).
+            <a href="https://arxiv.org/abs/1102.1725">arXiv:1102.1725</a>,
+            <a href="https://doi.org/10.1007/JHEP04%282011%29074">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We consider N=4 super Yang-Mills theory on a four-dimensional lattice. The lattice formulation under consideration retains one exact supersymmetry at non-zero lattice spacing. We show that this feature combined with gauge invariance and the large point group symmetry of the lattice theory ensures that the only counterterms that appear at any order in perturbation theory correspond to renormalizations of existing terms in the bare lattice action. In particular we find that no mass terms are generated at any finite order of perturbation theory. We calculate these renormalizations by examining the fermion and auxiliary boson self energies at one loop and find that they all exhibit a common logarithmic divergence which can be absorbed by a single wavefunction renormalization. This finding implies that at one loop only a fine tuning of the finite parts is required to regain full supersymmetry in the continuum limit.
+            </div>
+          </details>
+        </div>
+        
+        <h2>2010</h2>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag conference">Conference Proceeding</span>
+          </div>
+          <div class="pub-title">Gauge theory duals of black hole - black string transitions of gravitational theories on a circle</div>
+          <div class="pub-authors">Simon Catterall, Anosh Joseph, and Toby Wiseman</div>
+          <div class="pub-meta">
+            Physical Review D (2025).
+            <a href="https://arxiv.org/abs/1009.0529">arXiv:1009.0529</a>,
+            <a href="https://doi.org/10.1088/1742-6596/462/1/012022">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We study the black hole - black string phase transitions of gravitational theories compactified on a circle using the holographic duality conjecture. The gauge theory duals of these theories are maximally supersymmetric and strongly coupled 1 + 1 dimensional SU(N) Yang-Mills theories compactified on a circle, in the large N limit. We perform the strongly coupled finite temperature gauge theory calculations on a lattice, using the recently developed exact lattice supersymmetry methods based on topological twisting and orbifolding. The spatial Polyakov line serves as relevant order parameter of the confinement - deconfinement phase transitions in the gauge theory duals.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Thermal phases of D1-branes on a circle from lattice super Yang-Mills</div>
+          <div class="pub-authors">Simon Catterall, Anosh Joseph, and Toby Wiseman</div>
+          <div class="pub-meta">
+            Journal of High Energy Physics (2010).
+            <a href="https://arxiv.org/abs/1008.4964">arXiv:1008.4964</a>,
+            <a href="https://doi.org/10.1007/JHEP12%282010%29022">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We report on the results of numerical simulations of 1+1 dimensional SU(N) Yang-Mills theory with maximal supersymmetry at finite temperature and compactified on a circle. For large N this system is thought to provide a dual description of the decoupling limit of N coincident D1-branes on a circle. It has been proposed that at large N there is a phase transition at strong coupling related to the Gregory-Laflamme (GL) phase transition in the holographic gravity dual. In a high temperature limit there was argued to be a deconfinement transition associated to the spatial Polyakov loop, and it has been proposed that this is the continuation of the strong coupling GL transition. Investigating the theory on the lattice for SU(3) and SU(4) and studying the time and space Polyakov loops we find evidence supporting this. In particular at strong coupling we see the transition has the parametric dependence on coupling predicted by gravity. We estimate the GL phase transition temperature from the lattice data which, interestingly, is not yet known directly in the gravity dual. Fine tuning in the lattice theory is avoided by the use of a lattice action with exact supersymmetry.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Non-Pauli Transitions from Spacetime Noncommutativity</div>
+          <div class="pub-authors">A.P. Balachandran, Anosh Joseph, and Pramod Padmanabhan</div>
+          <div class="pub-meta">
+            Physical Review Letters (2010).
+            <a href="https://arxiv.org/abs/1003.2250">arXiv:1003.2250</a>,
+            <a href="https://doi.org/10.1103/PhysRevLett.105.051601">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              There are good reasons to suspect that spacetime at Planck scales is noncommutative. Typically this noncommutativity is controlled by fixed "vectors" or "tensors" with numerical entries. For the Moyal spacetime, it is the antisymmetric matrix θμν. In approaches enforcing Poincaré invariance, these deform or twist the method of (anti-)symmetrization of identical particle state vectors. We argue that the earth's rotation and movements in the cosmos are "sudden" events to Pauli-forbidden processes. They induce (twisted) bosonic components in state vectors of identical spinorial particles in the presence of a twist. These components induce non-Pauli transitions. From known limits on such transitions, we infer that the energy scale for noncommutativity is ≳1024TeV. This suggests a new energy scale beyond Planck scale.
+            </div>
+          </details>
+        </div>
+        
+        <h2>2009</h2>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Vortex Scattering and Intercommuting Cosmic Strings on a Noncommutative Spacetime</div>
+          <div class="pub-authors">Anosh Joseph and Mark Trodden</div>
+          <div class="pub-meta">
+            Physical Review D (2010).
+            <a href="https://arxiv.org/abs/0911.4668">arXiv:0911.4668</a>,
+            <a href="https://doi.org/10.1103/PhysRevD.81.043536">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We study the scattering of noncommutative vortices, based on the noncommutative field theory developed in [Phys. Rev. D 75, 045009 (2007)], as a way to understand the interaction of cosmic strings. In the center-of-mass frame, the effects of noncommutativity vanish, and therefore the reconnection of cosmic strings occurs in an identical manner to the commutative case. However, when scattering occurs in a frame other than the center-of-mass frame, strings still reconnect but the well known 90-degree scattering no longer need correspond to the head on collision of the strings, due to the breakdown of Lorentz invariance in the underlying noncommutative field theory.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Topological Dark Matter in Little Higgs Models</div>
+          <div class="pub-authors">Anosh Joseph and S. G. Rajeev</div>
+          <div class="pub-meta">
+            Physical Review D (2009).
+            <a href="https://arxiv.org/abs/0905.2772">arXiv:0905.2772</a>,
+            <a href="https://doi.org/10.1103/PhysRevD.80.074009">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We show that certain little Higgs models with symmetry breaking SU(N) -> SO(N) for N >= 4 admit topologically stable solitons that may contribute to cosmological dark matter. We have constructed a spherically symmetric soliton and estimated its mass in the case of SU(5) -> SO(5). Its lower bound is found to be around 10.3 TeV. Whether this particle is a fermion or a boson depends on the value of an integer-valued parameter of the underlying theory, analogous to the number of colors of QCD. In either case, the particle is neutral. If it is a fermion, it is a Majorana particle, which could take part in a seesaw mechanism for neutrino masses.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Causality and statistics on the Groenewold-Moyal plane</div>
+          <div class="pub-authors">A.P. Balachandran, Anosh Joseph and Pramod Padmanabhan</div>
+          <div class="pub-meta">
+            Foundations of Physics (2010).
+            <a href="https://arxiv.org/abs/0905.0876">arXiv:0905.0876</a>,
+            <a href="https://doi.org/10.1007/s10701-009-9335-4">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              Quantum theories constructed on the noncommutative spacetime called the Groenewold-Moyal plane exhibit many interesting properties such as Lorentz and CPT noninvariance, causality violation and twisted statistics. We show that such violations lead to many striking features that may be tested experimentally. These theories predict Pauli forbidden transitions due to twisted statistics, anisotropies in the cosmic microwave background radiation due to correlations of observables in spacelike regions and Lorentz and CPT violations in scattering amplitudes.
+            </div>
+          </details>
+        </div>
+        
+        <h2>2008</h2>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Particle phenomenology on noncommutative spacetime</div>
+          <div class="pub-authors">Anosh Joseph</div>
+          <div class="pub-meta">
+            Physical Review D (2009).
+            <a href="https://arxiv.org/abs/0811.3972">arXiv:0811.3972</a>,
+            <a href="https://doi.org/10.1103/PhysRevD.79.096004">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We introduce particle phenomenology on the noncommutative spacetime called the Groenewold-Moyal plane. The length scale of spcetime noncommutativity is constrained from the CPT violation measurements in K0−K¯0 system and g−2 difference of μ+−μ−. The K0−K¯0 system provides an upper bound on the length scale of spacetime noncommutativity of the order of 10−32m, corresponding to a lower energy bound E of the order of E≳1016GeV. The g−2 difference of μ+−μ− constrains the noncommutativity length scale to be of the order of 10−20m, corresponding to a lower energy bound E of the order of E≳103GeV.
+              We also present the phenomenology of the electromagnetic interaction of electrons and nucleons at the tree level in the noncommutative spacetime. We show that the distributions of charge and magnetization of nucleons are affected by spacetime noncommutativity. The analytic properties of electromagnetic form factors are also changed and it may give rise to interesting experimental signals.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Hamilton-Jacobi formalism for string gas thermodynamics</div>
+          <div class="pub-authors">Anosh Joseph and S. G. Rajeev</div>
+          <div class="pub-meta">
+            Physical Review D (2009).
+            <a href="https://arxiv.org/abs/0807.3957">arXiv:0807.3957</a>,
+            <a href="https://doi.org/10.1103/PhysRevD.79.063525">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We show that the thermodynamics of a system of strings at high energy densities under the ideal gas approximation has a formulation in terms of Hamilton-Jacobi theory. The two parameters of the system, which have dimensions of energy density and number density, respectively, define a family of hypersurfaces of co-dimension one, which can be described by the vanishing of a function F that plays the role of a Hamiltonian.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Constraints from CMB on Spacetime Noncommutativity and Causality Violation</div>
+          <div class="pub-authors">Earnest Akofor, A. P. Balachandran, Anosh Joseph, Larne Pekowsky, and Babar A. Qureshi</div>
+          <div class="pub-meta">
+            Physical Review D (2009).
+            <a href="https://arxiv.org/abs/0806.2458">arXiv:0806.2458</a>,
+            <a href="https://doi.org/10.1103/PhysRevD.79.063004">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We try to constrain the noncommutativity length scale of the theoretical model given in Ref. [1] using the observational data from ACBAR, CBI and five year WMAP. The noncommutativity parameter is not constrained by WMAP data, however ACBAR and CBI data restrict the lower bound of its energy scale to be around 10 TeV. We also derive an expression for the amount of non-causality coming from spacetime noncommutativity for the fields of primordial scalar perturbations that are space-like separated. The amount of causality violation for these field fluctuations are direction dependent.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Quantum Fields on the Groenewold-Moyal Plane</div>
+          <div class="pub-authors">Earnest Akofor, A. P. Balachandran, and Anosh Joseph</div>
+          <div class="pub-meta">
+            International Journal of Modern Physics A (2008).
+            <a href="https://arxiv.org/abs/0803.4351">arXiv:0803.4351</a>,
+            <a href="https://doi.org/10.1142/S0217751X08040317">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We give an introductory review of quantum physics on the noncommutative spacetime called the Groenewold-Moyal plane. Basic ideas like star products, twisted statistics, second quantized fields and discrete symmetries are discussed. We also outline some of the recent developments in these fields and mention where one can search for experimental signals.
+            </div>
+          </details>
+        </div>
+        
+        <h2>2007</h2>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Lattice actions for Yang-Mills quantum mechanics with exact supersymmetry</div>
+          <div class="pub-authors">Simon Catterall and Anosh Joseph</div>
+          <div class="pub-meta">
+            Physical Review D (2008).
+            <a href="https://arxiv.org/abs/0712.3074">arXiv:0712.3074</a>,
+            <a href="https://doi.org/10.1103/PhysRevD.77.094504">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              We derive lattice actions for Yang-Mills quantum mechanics for models with Q = 4, 8 and 16 supercharges which possess an exact supersymmetry at non-zero lattice spacing. These are obtained by dimensional reduction of twisted versions of the corresponding super Yang-Mills theories in D = 2, 3 and 4 dimensions.
+            </div>
+          </details>
+        </div>
+        
+        <div class="pub">
+          <div class="pub-tags">
+            <span class="pub-tag journal">Journal Article</span>
+          </div>
+          <div class="pub-title">Direction-Dependent CMB Power Spectrum and Statistical Anisotropy from Noncommutative Geometry</div>
+          <div class="pub-authors">Earnest Akofor, A. P. Balachandran, Sang G. Jo, Anosh Joseph, Babar A. Qureshi</div>
+          <div class="pub-meta">
+            Journal of High Energy Physics (2008).
+            <a href="https://arxiv.org/abs/0710.5897">arXiv:0710.5897</a>,
+            <a href="https://doi.org/10.1088/1126-6708/2008/05/092">DOI</a>
+          </div>
+          <details class="abstract-toggle">
+            <summary>Abstract</summary>
+            <div class="abstract">
+              Modern cosmology has now emerged as a testing ground for theories beyond the standard model of particle physics. In this paper, we consider quantum fluctuations of the inflaton scalar field on certain noncommutative spacetimes and look for noncommutative corrections in the cosmic microwave background (CMB) radiation. Inhomogeneities in the distribution of large scale structure and anisotropies in the CMB radiation can carry traces of noncommutativity of the early universe. We show that its power spectrum becomes direction-dependent when spacetime is noncommutative. (The effects due to noncommutativity can be observed experimentally in the distribution of large scale structure of matter as well.) Furthermore, we have shown that the probability distribution determining the temperature fluctuations is not Gaussian for our noncommutative spacetimes.
+            </div>
+          </details>
+        </div>
+    </main>
+    
+    <footer>
+      <div class="container">
+        <p><strong>Anosh Joseph</strong><br>
+        School of Physics<br>
+        University of the Witwatersrand<br>
+        Johannesburg, South Africa</p>
+        <p>© Anosh Joseph. All rights reserved.</p>
+      </div>
+    </footer>
+    
+  </body>
+</html>

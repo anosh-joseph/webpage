@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>About - Anosh Joseph</title>
+    
+    <!-- Neutral, timeless typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+          
+          <style>
+            /* =========================
+             Design tokens (reusable)
+             ========================= */
+            :root {
+              --text: #1f2937;
+              --muted: #6b7280;
+              --border: #e5e7eb;
+              --bg: #ffffff;
+              --accent: #374151;
+            }
+            
+            body {
+              margin: 0;
+              background: var(--bg);
+              color: var(--text);
+              font-family: "Source Serif 4", Georgia, serif;
+              line-height: 1.75;
+            }
+            
+            /* =========================
+             Header & navigation
+             ========================= */
+            header {
+              position: sticky;
+              top: 0;
+              background: #ffffffee;
+              backdrop-filter: blur(4px);
+              border-bottom: 1px solid var(--border);
+              z-index: 1000;
+            }
+            
+            .nav-container {
+              max-width: 1100px;
+              margin: 0 auto;
+              padding: 0.75rem 1.25rem;
+              display: flex;
+              align-items: center;
+              gap: 2rem;
+            }
+            
+            .nav-container img {
+              height: 64px;
+            }
+            
+            nav ul {
+              list-style: none;
+              display: flex;
+              gap: 0.9rem;              /* tighter desktop spacing */
+              padding: 0 0 0 3rem;
+              margin-left: auto;
+              margin-right: 0;
+              font-family: "Inter", system-ui, sans-serif;
+              font-size: 0.86rem;       /* slightly smaller, understated */
+              letter-spacing: 0.02em;   /* improves readability at tight spacing */
+            }
+            
+            nav a {
+              text-decoration: none;
+              color: var(--accent);
+              white-space: nowrap;
+            }
+            
+            nav a.active {
+              font-weight: 500;
+              border-bottom: 2px solid var(--accent);
+              padding-bottom: 0.15rem;
+            }
+            
+            /* Mobile navigation refinements */
+            @media (max-width: 700px) {
+              nav ul {
+                flex-wrap: wrap;
+                gap: 0.6rem 1rem;   /* looser vertical spacing for touch */
+                font-size: 0.9rem;  /* restore size for mobile readability */
+                letter-spacing: 0.03em;
+                padding-left: 1.5rem;
+              }
+            }
+            
+            /* =========================
+             Main layout
+             ========================= */
+            main {
+              max-width: 820px;
+              margin: 3rem auto 4rem;
+              padding: 0 1.25rem;
+            }
+            
+            section {
+              margin-bottom: 3rem;
+            }
+            
+            h2 {
+              font-size: 1.35rem;
+              font-weight: 600;
+              margin-bottom: 0.75rem;
+              color: var(--accent);
+            }
+            
+            p {
+              margin: 0.75rem 0;
+            }
+            
+            a {
+              color: #2563eb;
+              text-decoration: none;
+            }
+            
+            a:hover {
+              text-decoration: underline;
+            }
+            
+            /* =========================
+             Tables
+             ========================= */
+            table {
+              width: 100%;
+              border-collapse: collapse;
+              font-size: 0.95rem;
+            }
+            
+            td {
+              padding: 0.25rem 0;
+              vertical-align: top;
+            }
+            
+            /* =========================
+             Profile header
+             ========================= */
+            .profile-grid {
+              display: grid;
+              grid-template-columns: 1fr 200px;
+              gap: 2.5rem;
+              align-items: start;
+            }
+            
+            .photo-placeholder {
+              width: 200px;
+              height: 240px;
+              border: 1px solid var(--border);
+              background: #fafafa;
+              display: flex;
+              align-items: center;
+              justify-content: center;
+              color: var(--muted);
+              font-family: "Inter", system-ui, sans-serif;
+              font-size: 0.9rem;
+            }
+            
+            @media (max-width: 720px) {
+              .profile-grid {
+                grid-template-columns: 1fr;
+              }
+              
+              .photo-placeholder {
+                margin: 0 auto 2rem;
+              }
+            }
+            
+            /* =========================
+             Footer
+             ========================= */
+            footer {
+              border-top: 1px solid var(--border);
+              padding: 2rem 1.25rem;
+              font-size: 0.9rem;
+              color: var(--muted);
+            }
+            
+            footer .container {
+              max-width: 820px;
+              margin: 0 auto;
+            }
+          </style>
+  </head>
+  
+  <body>
+    
+    <header>
+      <div class="nav-container">
+        <a href="lft_group.html">
+          <img src="assets/img/anosh_joseph.png" alt="Anosh Joseph" />
+        </a>
+        <nav>
+          <ul>
+            <li><a href="index.html" class="active">About</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="talks.html">Talks</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="mitp_events.html">MITP Events</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="join_us.html">Join Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <main>
+      
+      <section class="profile-header">
+        <div class="profile-grid">
+          <div class="profile-text">
+            <h2>Brief Biography</h2>
+            <p>Anosh Joseph is a theoretical physicist working in high-energy physics, quantum field theory, supersymmetry, and computational physics. He received his Ph.D. in Physics from Syracuse University in 2011.
+            <p>
+            </p>
+            His research focuses on lattice supersymmetry, lattice field theory, matrix models, and non-perturbative computational methods, with particular emphasis on Monte Carlo simulations and the sign problem in quantum field theories. He has supervised numerous students and interns, guiding projects spanning matrix quantum mechanics, numerical simulations, and modern computational approaches to quantum field theory.
+            <p>
+            </p>
+            Previously, he was a member of the String Theory and Quantum Gravity group at the International Centre for Theoretical Sciences (ICTS–TIFR). He later served as an Assistant Professor at the Indian Institute of Science Education and Research (IISER) Mohali. He is currently a Senior Lecturer in the School of Physics at the University of the Witwatersrand, Johannesburg, South Africa.
+            <p>
+            </p>
+            His work has received broad recognition, with over 1,500 citations. He is also the author of A Primer on Markov Chain Monte Carlo Methods in Quantum Field Theory, published in the Springer Briefs in Physics series in 2020.
+            <p>
+            </p>
+            In addition to research and teaching, he is actively involved in the scientific community and has served on the organizing committee of international academic events, including the series of Mandelstam Theoretical Physics School and Workshop.
+            </p>
+          </div>
+          <div class="profile-photo">
+            <img src="assets/img/JOSEPH_Anosh.jpg" alt="Anosh Joseph" class="photo-placeholder">
+          </div>
+        </div>
+      </section>
+      
+      <!-- Remaining content unchanged -->
+      
+    </main>
+    
+    <footer>
+      <div class="container">
+        <p><strong>Anosh Joseph</strong><br>
+        School of Physics<br>
+        University of the Witwatersrand<br>
+        1 Jan Smuts Avenue, Braamfontein<br>
+        Johannesburg 2000, South Africa</p>
+        <p>© Anosh Joseph. All rights reserved.</p>
+      </div>
+    </footer>
+    
+  </body>
+</html>

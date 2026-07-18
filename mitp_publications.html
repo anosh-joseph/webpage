@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Join Us - Anosh Joseph</title>
+    
+    <!-- Typography consistent with main site -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+          
+          <style>
+            :root {
+              --text: #1f2937;
+              --muted: #6b7280;
+              --border: #e5e7eb;
+              --bg: #ffffff;
+              --accent: #374151;
+              --link: #2563eb;
+            }
+            
+            body {
+              margin: 0;
+              background: var(--bg);
+              color: var(--text);
+              font-family: "Source Serif 4", Georgia, serif;
+              line-height: 1.75;
+            }
+            
+            /* Header / Navigation */
+            header {
+              position: sticky;
+              top: 0;
+              background: #ffffffee;
+              backdrop-filter: blur(4px);
+              border-bottom: 1px solid var(--border);
+              z-index: 1000;
+            }
+            
+            .nav-container {
+              max-width: 1100px;
+              margin: 0 auto;
+              padding: 0.75rem 1.25rem;
+              display: flex;
+              align-items: center;
+            }
+            
+            .nav-container img {
+              height: 64px;
+            }
+            
+            nav ul {
+              list-style: none;
+              display: flex;
+              gap: 1.1rem;
+              margin-left: auto;
+              padding-left: 3rem;
+              font-family: "Inter", system-ui, sans-serif;
+              font-size: 0.88rem;
+              letter-spacing: 0.02em;
+            }
+            
+            nav a {
+              text-decoration: none;
+              color: var(--accent);
+            }
+            
+            nav a.active {
+              font-weight: 500;
+              border-bottom: 2px solid var(--accent);
+              padding-bottom: 0.15rem;
+            }
+            
+            @media (max-width: 700px) {
+              nav ul {
+                flex-wrap: wrap;
+                gap: 0.75rem 1rem;
+              }
+            }
+            
+            /* Main layout */
+            main {
+              max-width: 820px;
+              margin: 3rem auto 4rem;
+              padding: 0 1.25rem;
+            }
+            
+            h1 {
+              font-size: 1.8rem;
+              margin-bottom: 2rem;
+              color: var(--accent);
+            }
+            
+            /* Publication entries */
+            .pub {
+              margin-bottom: 2.5rem;
+              padding-bottom: 1.75rem;
+              border-bottom: 1px solid var(--border);
+            }
+            
+            .pub:last-child {
+              border-bottom: none;
+            }
+            
+            .pub-title {
+              font-weight: 600;
+            }
+            
+            .pub-authors {
+              margin: 0.2rem 0;
+            }
+            
+            .pub-meta {
+              font-size: 0.9rem;
+              color: var(--muted);
+            }
+            
+            .pub-meta a {
+              color: var(--link);
+            }
+            
+            .abstract {
+              margin-top: 0.6rem;
+              font-size: 0.95rem;
+              color: var(--text);
+            }
+            
+            details {
+              margin-top: 0.5rem;
+            }
+            
+            details summary {
+              cursor: pointer;
+              font-family: "Inter", system-ui, sans-serif;
+              font-size: 0.85rem;
+              color: var(--link);
+            }
+            
+            /* Footer */
+            footer {
+              border-top: 1px solid var(--border);
+              padding: 2rem 1.25rem;
+              font-size: 0.9rem;
+              color: var(--muted);
+            }
+            
+            footer .container {
+              max-width: 820px;
+              margin: 0 auto;
+            }
+          </style>
+        </head>
+  
+  <body>
+    
+    <header>
+      <div class="nav-container">
+        <a href="lft_group.html"><img src="assets/img/anosh_joseph.png" alt="Anosh Joseph"></a>
+        <nav>
+          <ul>
+            <li><a href="index.html">About</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="talks.html">Talks</a></li>
+            <li><a href="teaching.html">Teaching</a></li>
+            <li><a href="mitp_events.html">MITP Events</a></li>
+            <li><a href="news.html">News</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="join_us.html" class="active">Join Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    
+    <main>
+      
+      <h1>MITP Publications 2025</h1>
+      
+      <p>
+      Below is a selection of research publications associated with the Mandelstam
+      Institute for Theoretical Physics (MITP) in 2025. These works span a broad
+      range of topics across theoretical and mathematical physics, condensed
+      matter physics, and applied thermal engineering.
+      </p>
+      
+      <section class="pub">
+        <div class="pub-title">
+          Urn models, Markov chains and random walks in cosmological topologically
+          massive gravity at the critical point
+        </div>
+        <div class="pub-authors">
+          Yannick Mvondo She
+        </div>
+        <div class="pub-meta">
+          <em>Journal of Geometry and Physics</em>, Vol. 207 (2025), Article 105347
+        </div>
+        <div class="abstract">
+          This work explores stochastic processes such as urn models and random
+          walks within the framework of cosmological topologically massive gravity.
+          By focusing on the critical point of the theory, the paper reveals novel
+          connections between probabilistic dynamics and gravitational models in
+          lower dimensions.
+          <br><br>
+          DOI:
+          <a href="https://doi.org/10.1016/j.geomphys.2024.1053487">
+            10.1016/j.geomphys.2024.1053487
+          </a>
+        </div>
+      </section>
+      
+      <section class="pub">
+        <div class="pub-title">
+          Existence of a flat band in highly correlated metal BaCo<sub>2</sub>P<sub>2</sub>
+        </div>
+        <div class="pub-authors">
+          Arthur van der Spuy, Robert Warmbier, Abhishek Pandey
+        </div>
+        <div class="pub-meta">
+          <em>Journal of Physics: Condensed Matter</em>, Vol. 37 (2025), Article 155602
+        </div>
+        <div class="abstract">
+          This paper investigates the electronic structure of the strongly
+          correlated metal BaCo<sub>2</sub>P<sub>2</sub>, demonstrating the existence
+          of a flat electronic band. Such features are of particular interest due
+          to their connection with enhanced correlation effects and emergent
+          quantum phases.
+          <br><br>
+          DOI:
+          <a href="https://doi.org/10.1088/1361-648X/adb675">
+            10.1088/1361-648X/adb675
+          </a>
+        </div>
+      </section>
+      
+      <section class="pub">
+        <div class="pub-title">
+          Suppression of ferromagnetic correlations in hole-doped
+          SrCo<sub>2</sub>As<sub>2</sub>
+        </div>
+        <div class="pub-authors">
+          Mahlogonolo Morena, Arthur van der Spuy, Y. Liu, Robert Warmbier,
+          Abhishek Pandey
+        </div>
+        <div class="pub-meta">
+          <em>Journal of Physics: Materials</em>, Vol. 8 (2025), Article 025009
+        </div>
+        <div class="abstract">
+          The authors study the impact of hole doping on magnetic correlations in
+          SrCo<sub>2</sub>As<sub>2</sub>. Their results show a suppression of
+          ferromagnetic tendencies, providing insight into how electronic tuning
+          influences magnetic behavior in correlated materials.
+          <br><br>
+          DOI:
+          <a href="https://doi.org/10.1088/2515-7639/adb801">
+            10.1088/2515-7639/adb801
+          </a>
+        </div>
+      </section>
+      
+      <section class="pub">
+        <div class="pub-title">
+          Validated theoretical model for IR-reflective heat transfer in cylindrical
+          annuli: experiment, simulation, and application
+        </div>
+        <div class="pub-authors">
+          Khaled Mohamad, Philippe Ferrer
+        </div>
+        <div class="pub-meta">
+          <em>Applied Thermal Engineering</em>, Vol. 278 (2025), Article 127171
+        </div>
+        <div class="abstract">
+          This work presents a validated theoretical model for infrared-reflective
+          heat transfer in cylindrical annular geometries. Combining experimental
+          measurements with numerical simulations, the study demonstrates the
+          accuracy and practical applicability of the model in engineering contexts.
+          <br><br>
+          DOI:
+          <a href="https://doi.org/10.1016/j.applthermaleng.2025.127171">
+            10.1016/j.applthermaleng.2025.127171
+          </a>
+        </div>
+      </section>
+
+    </main>
+    
+    <footer>
+      <div class="container">
+        <p><strong>Anosh Joseph</strong><br>
+        School of Physics<br>
+        University of the Witwatersrand<br>
+        Johannesburg, South Africa</p>
+        <p>© Anosh Joseph. All rights reserved.</p>
+      </div>
+    </footer>
+    
+  </body>
+</html>
+
